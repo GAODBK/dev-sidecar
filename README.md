@@ -86,8 +86,21 @@
 
 #### 1）下载安装包
 
-- release下载
+```shell
+Github 文件加速 : https://www.7ed.net/gitmirror/hub.html 	在源网址前加上 https://hub.gitmirror.com/
+
+Github RAW 加速服务 : https://www.7ed.net/gitmirror/raw.html 将raw.githubusercontent.com替换为raw.gitmirror.com
+
+Github Gist 加速服务 : https://www.7ed.net/gitmirror/gist.html 将gist.githubusercontent.com替换为gist.gitmirror.com
+
+https://hub.gitmirror.com/https://github.com/docmirror/dev-sidecar/releases/download/v2.0.0-RC6/DevSidecar-2.0.0-RC6-windows-x64.exe
+
+https://hub.gitmirror.com/https://github.com/docmirror/dev-sidecar/releases/download/v2.0.0-RC6/DevSidecar-2.0.0-RC6-linux-amd64.deb
+```
+
+- release下载页
   [Github Release](https://github.com/docmirror/dev-sidecar/releases)
+
 
 > Windows: 请选择DevSidecar-x.x.x.exe
 > Mac: 请选择DevSidecar-x.x.x.dmg
@@ -102,7 +115,7 @@
 
 > 注意：mac版安装需要在“系统偏好设置->安全性与隐私->通用”中解锁并允许应用安装
 
-![](./doc/index.png)
+![](https://i-3p1.pages.dev/GAODBK/dev-sidecar/raw/master/doc/index.png)
 
 #### 3）安装根证书
 
@@ -123,9 +136,9 @@
 
 |          | 开启前                         | 开启后                                            |
 | -------- | ------------------------------ | ------------------------------------------------- |
-| 头像     | ![](./doc/avatar2.png)         | ![](./doc/avatar1.png)                            |
-| clone    | ![](./doc/clone-before.png)    | ![](./doc/clone.png)                              |
-| zip 下载 | ![](./doc/download-before.png) | ![](./doc/download.png)秒下的，实在截不到速度的图 |
+| 头像     | ![](https://i-3p1.pages.dev/GAODBK/dev-sidecar/raw/master/doc/avatar2.png)         | ![](https://i-3p1.pages.dev/GAODBK/dev-sidecar/raw/master/doc/avatar1.png)                            |
+| clone    | ![](https://i-3p1.pages.dev/GAODBK/dev-sidecar/raw/master/doc/clone-before.png)    | ![](https://i-3p1.pages.dev/GAODBK/dev-sidecar/raw/master/doc/clone.png)                              |
+| zip 下载 | ![](https://i-3p1.pages.dev/GAODBK/dev-sidecar/raw/master/doc/download-before.png) | ![](https://i-3p1.pages.dev/GAODBK/dev-sidecar/raw/master/doc/download.png)秒下的，实在截不到速度的图 |
 
 ## 三、模式说明
 
@@ -135,7 +148,7 @@
 - 最安全，无需安装证书，可以在浏览器地址栏左侧查看域名证书
 - 功能也最弱，只有特性1，相当于查询github的国外ip，手动改hosts一个意思。
 - github的可访问性不稳定，取决于IP测速，如果有绿色ip存在，就 `有可能` 可以直连访问。
-  ![](./doc/speed.png)
+  ![](https://i-3p1.pages.dev/GAODBK/dev-sidecar/raw/master/doc/speed.png)
 
 ### 3.2、默认模式
 
@@ -356,7 +369,6 @@ npm config delete https-proxy
 
 ```shell
 npm install -g pnpm --registry=https://registry.npmmirror.com
-
 ```
 
 ### 8.2、开发调试模式启动
@@ -375,7 +387,6 @@ pnpm install
 # 运行DevSidecar
 cd packages/gui
 npm run electron
-
 ```
 
 > 如果electron依赖包下载不动，可以开启ds的npm加速
